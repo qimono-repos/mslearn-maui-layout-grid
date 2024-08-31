@@ -11,10 +11,10 @@
     >
         <Label
             Grid.Row="0" Grid.Column="0" 
-            Text="Bill" 
+            Text="Bill" VerticalOptions="Center"
         />
         <Entry 
-            Grid.Row="0" Grid.Column="1"
+            Grid.Row="0" Grid.Column="1" 
             x:Name="billInput" Placeholder="Enter Amount" Keyboard="Numeric" 
         />
 
@@ -43,39 +43,39 @@
         <Label 
 
             Grid.Row="3" Grid.Column="0" 
-            Text="Tip Percentage" 
+            Text="Tip Percentage" VerticalOptions="End" HorizontalOptions="Start" 
         />
         <Label 
 
             Grid.Row="3" Grid.Column="1" 
-            x:Name="tipPercent" Text="15%" 
+            x:Name="tipPercent" Text="15%" VerticalOptions="End" HorizontalOptions="End"
         />
         <Slider 
             
-            Grid.Row="4" Grid.Column="0" 
+            Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"
             x:Name="tipPercentSlider" Minimum="0" Maximum="100" Value="15" 
         />
 
         <Button 
 
             Grid.Row="5" Grid.Column="0" 
-            Text="15%" Clicked="OnNormalTip" 
+            Text="15%" Clicked="OnNormalTip" Margin="5"
         />
         <Button 
 
             Grid.Row="5" Grid.Column="1" 
-            Text="20%" Clicked="OnGenerousTip" 
+            Text="20%" Clicked="OnGenerousTip" Margin="5" 
         />
 
         <Button 
 
             Grid.Row="6" Grid.Column="0" 
-            x:Name="roundDown" Text="Round Down" 
+            x:Name="roundDown" Text="Round Down" Margin="5"
         />
         <Button 
 
             Grid.Row="6" Grid.Column="1" 
-            x:Name="roundUp"   Text="Round Up" 
+            x:Name="roundUp"   Text="Round Up" Margin="5"
         />
 
 
